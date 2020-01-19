@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "lib": ["ESNext"],
+        "rootDir": "src",
+        "outDir": "dist"
+    },
+    "files": [
+       
+    ]
+}
