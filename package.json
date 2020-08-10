@@ -2,17 +2,39 @@
   "name": "babel-plugin-optional-chaining-retro",
   "version": "0.0.1",
   "description": "A retro implementation of optional chaining",
-  "main": "index.js",
+  "main": "dist/src/index.js",
   "author": "Eli Gao <refraction222@gmail.com>",
   "license": "MIT",
-  "private": false,
   "dependencies": {
     "@babel/core": "^7.8.3",
+    "@babel/helper-plugin-test-runner": "^7.8.3",
     "@babel/helper-plugin-utils": "^7.8.3",
+    "@babel/plugin-syntax-optional-chaining": "^7.8.3",
+    "@babel/types": "^7.8.3",
     "@types/babel__core": "^7.1.3",
+    "@types/dlv": "^1.1.1",
+    "@types/jest": "^24.9.0",
+    "dlv": "^1.1.3",
+    "ts-jest": "^24.3.0",
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "build": "tsc src -d ./dist"
+    "build": "tsc",
+    "test": "jest",
+    "link-self": "yarn link; yarn link 'babel-plugin-optional-chaining-retro';",
+    "unlink-self": "yarn unlink; yarn unlink 'babel-plugin-optional-chaining-retro';"
+  },
+  "devDependencies": {
+    "@babel/helper-module-imports": "^7.8.3",
+    "@types/node": "^13.1.8",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "babel-plugin-tester": "^9.2.0",
+    "dts-gen": "^0.6.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
   }
 }

@@ -1,16 +1,16 @@
 {
-    "compilerOptions": {
-        "module": "ESNext",
-        "noImplicitAny": true,
-        "removeComments": true,
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "strictNullChecks": true,
-        "lib": ["ESNext"],
-        "rootDir": "src",
-        "outDir": "dist"
-    },
-    "files": [
-       
-    ]
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "rootDir": ".",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "typeRoots": ["./typings", "./node_modules/@types"]
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules", "tests"]
 }
