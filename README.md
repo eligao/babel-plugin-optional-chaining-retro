@@ -69,9 +69,9 @@ const y = get(get(obj, ["alpha", "beta"]).charlie, "charlie");
 const z = get(obj, ["alpha", "fox"]);
 ```
 
-We can see the transpiled code using a runtime `keyPath` function costs 1.53x inflation vs the 7.31x overhead in the current babel transpiler. 
+We can see the transpiled code using a runtime `keyPath` function costs `1.53x` inflation vs the `7.31x` overhead in the current babel transpiler. 
 
-That is ~4.78x save of space in our naive example. Of course, the optional chaining won't normally happen that much in your code.
+That is `~4.78x` save of space in our naive example. Of course, the optional chaining won't normally happen that much in your code.
 
 ## Sounds good, but what's the catch?
 I'm glad you asked.
