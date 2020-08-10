@@ -39,7 +39,7 @@ const z = obj?.alpha?.fox
 
 ```
 
-### Transpiled by the vanilla babel
+#### Transpiled by the vanilla babel
 (Try it yourself on the [Babel Repl](https://babeljs.io/repl))
 
 ```javascript
@@ -54,7 +54,7 @@ const y = (_obj2 = obj) === null || _obj2 === void 0 ? void 0 : (_obj2$alpha = _
 const z = (_obj3 = obj) === null || _obj3 === void 0 ? void 0 : (_obj3$alpha = _obj3.alpha) === null || _obj3$alpha === void 0 ? void 0 : _obj3$alpha.fox;
 ```
 
-### Transpiled by babel with this retro plugin
+#### Transpiled by babel with this retro plugin
 
 ```javascript
 // runtime keyPath helper
