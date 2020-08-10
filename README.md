@@ -77,11 +77,11 @@ That is `~4.78x` save of space in our naive example. Of course, the optional cha
 
 ## Sounds good, but what's the catch?
 I'm glad you asked.
-- The runtime `keyPath` function introduces a constant cost depending on what `get` function you introduce. Here we provide 2 options:
+- A constant cost of code length from runtime `keyPath` function, depending on its implementation. Here we provide 2 options:
     - [`lodash.get`](https://www.npmjs.com/package/lodash.get): The most commonly used `keyPath` helper, [costs 4.4KB minified, or 1.8KB minified and gzipped](https://bundlephobia.com/result?p=lodash.get@4.4.2)
     - [`dlv`](https://www.npmjs.com/package/dlv): A geniously minimalist implementation from the author of PreactJS, [costs 253B minified, or 191B minified and gzipped](https://bundlephobia.com/result?p=dlv@1.1.3).
     - The extra cost is easily negated after a few or even one usage of optional chaining.
     - You can technically get the helper function for free if you have it already in your dependency.
 - Some minor performance overhead. 
-    - The retro output using the `dlv` helper takes ~30% performance hit on my laptop vs the vanilla babel output.
-    - Run the benchmark [here](https://jsben.ch/NTCz9) by yourself
+    - The retro output using the `dlv` helper sets me back by ~30% on my laptop vs the vanilla babel output.
+    - Run the benchmark [here](https://jsben.ch/NTCz9) on your own device.
