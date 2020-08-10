@@ -7,6 +7,8 @@ This is a retrospetive trasformation plugin of EcmaScript optional chaining synt
 
 - Because the output of default built-in [@babel/plugin-syntax-optional-chaining](https://babeljs.io/docs/en/next/babel-plugin-syntax-optional-chaining.html) is too wordy and unreadable
 - Remember the good old day when we use keyPath helpers like [lodash.get](https://www.npmjs.com/package/lodash.get) to safely get a key deep inside an object?
+- To sqeeze every possible bit of space in the javascript bundle.
+- I want to try fiddling with babel myself :)
 
 ### Example
 Assume we have this object with some deeply nested keys:
