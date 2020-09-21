@@ -3,6 +3,9 @@ import babelPluginOptionalChainingRetro from "../src";
 
 pluginTester({
   plugin: babelPluginOptionalChainingRetro,
+  pluginOptions: {
+    autoImportKeypathHelper: false,
+  },
   tests: {
     "does not change code with no identifiers": '"hello";',
     "shallow get": {
