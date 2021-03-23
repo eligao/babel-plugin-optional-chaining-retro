@@ -9,7 +9,9 @@
     "@babel/core": "^7.8.3",
     "@babel/helper-plugin-test-runner": "^7.8.3",
     "@babel/helper-plugin-utils": "^7.8.3",
+    "@babel/plugin-external-helpers": "^7.10.4",
     "@babel/plugin-syntax-optional-chaining": "^7.8.3",
+    "@babel/plugin-transform-spread": "^7.11.0",
     "@babel/types": "^7.8.3",
     "@types/babel__core": "^7.1.3",
     "@types/dlv": "^1.1.1",
@@ -22,6 +24,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
+    "test:clear": "find . -name 'output.js' -exec rm {} \\;",
     "link-self": "yarn link; yarn link 'babel-plugin-optional-chaining-retro';",
     "unlink-self": " yarn unlink 'babel-plugin-optional-chaining-retro';yarn unlink;"
   },
