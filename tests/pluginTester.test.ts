@@ -2,6 +2,7 @@ import pluginTester from "babel-plugin-tester";
 import babelPluginOptionalChainingRetro from "../src";
 
 pluginTester({
+  skip: true,
   plugin: babelPluginOptionalChainingRetro,
   pluginOptions: {
     autoImportKeypathHelper: false,

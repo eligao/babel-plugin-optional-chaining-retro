@@ -13,7 +13,7 @@ const obj = {
     },
   },
 };
-describe("prerequisite tests between get() and optional chaining", () => {
+describe.skip("prerequisite tests between get() and optional chaining", () => {
   it("should be consistent on successful elems", () => {
     const getVal = get(obj, "b.c");
     const ocVal = obj.b?.c;
