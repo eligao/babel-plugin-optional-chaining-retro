@@ -37,10 +37,10 @@ function babelPluginOptionalChainingRetro(
             // the node is an optional identifier
             if (!optionalObjectRoot) optionalObjectRoot = node.object;
             optionalIdentifierStack.push(node.property);
-            if (autoImportKeypathHelper) {
-              this.getter =
-                this.getter ||
-                addDefault(path, keypathHelperName, { nameHint: "get" });
+            if (autoImportKeypathHelper && !this.getter) {
+              this.getter = addDefault(path, keypathHelperName, {
+                nameHint: "get",
+              });
             }
 
             if (
